@@ -1,2 +1,15 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+
+@theme {
+	--font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+	--color-brand: #ff5f00;
+	--color-brand-hover: #e65500;
+	--color-accent: #078691;
+	--color-accent-hover: #056b74;
+}
+
+/* Prevent page scroll behind an open modal */
+html:has(dialog[open]) {
+	overflow: hidden;
+}
